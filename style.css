@@ -40,6 +40,7 @@ body main .container button {
   cursor: pointer;
   -webkit-transition: .2s ease;
   transition: .2s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body main .container .front {
