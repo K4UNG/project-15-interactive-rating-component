@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Overpass:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+}
+
+body main {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: #121417;
+  position: relative;
+}
+
+body main .container {
+  width: 90%;
+  max-width: 380px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.77, 0.04, 0.15, 1.47);
+  transition: -webkit-transform 0.8s cubic-bezier(0.77, 0.04, 0.15, 1.47);
+  transition: transform 0.8s cubic-bezier(0.77, 0.04, 0.15, 1.47);
+  transition: transform 0.8s cubic-bezier(0.77, 0.04, 0.15, 1.47), -webkit-transform 0.8s cubic-bezier(0.77, 0.04, 0.15, 1.47);
+}
+
+body main .container button {
+  cursor: pointer;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+body main .container .front {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  inset: 0;
+  padding: 1.7em;
+  border-radius: 28px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(80%, #19212a), to(#212731));
+  background: linear-gradient(to top, #19212a 80%, #212731);
+}
+
+body main .container .front .img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: none;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #2f353c;
+  margin-bottom: .5em;
+}
+
+body main .container .front h1 {
+  color: white;
+  font-size: 1.5rem;
+  margin: .6em 0;
+}
+
+body main .container .front p {
+  color: #959eac;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+body main .container .front .buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  margin: 1.3em 0;
+}
+
+body main .container .front .buttons button {
+  font-size: .9rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  font-weight: 700;
+  color: #959eac;
+  background-color: #212731;
+}
+
+body main .container .front .buttons button:hover {
+  background: #959eac;
+  color: white;
+}
+
+body main .container .front .buttons button.active {
+  background: #fb7413;
+  color: white;
+}
+
+body main .container .front .submit {
+  width: 100%;
+  margin: .5em 0;
+  background: #fb7413;
+  border-radius: 2em;
+  border: none;
+  padding: .8em;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1rem;
+}
+
+body main .container .front .submit:hover {
+  background: white;
+  color: #fb7413;
+}
+
+body main .container .back {
+  padding: 1.7em;
+  border-radius: 28px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(80%, #19212a), to(#212731));
+  background: linear-gradient(to top, #19212a 80%, #212731);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  text-align: center;
+}
+
+body main .container .back .img-back {
+  margin: 1em 0;
+}
+
+body main .container .back .rating {
+  background: #2f353c;
+  padding: .3em .7em;
+  border-radius: 1em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 1em auto;
+  color: #fb7413;
+}
+
+body main .container .back h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin: .4em 0;
+}
+
+body main .container .back > p {
+  color: #959eac;
+  font-size: .95rem;
+  line-height: 1.5;
+}
+
+body main .attribution {
+  position: absolute;
+  bottom: 5px;
+  color: white;
+}
+
+body main .attribution a {
+  color: #fb7413;
+}
+/*# sourceMappingURL=style.css.map */
