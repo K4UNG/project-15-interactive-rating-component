@@ -101,12 +101,12 @@ body main .container .front .buttons button {
 }
 
 body main .container .front .buttons button:hover {
-  background: #959eac;
+  background: #fb7413;
   color: white;
 }
 
 body main .container .front .buttons button.active {
-  background: #fb7413;
+  background: #959eac;
   color: white;
 }
 
