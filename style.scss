@@ -25,6 +25,8 @@ body {
         place-items: center;
         background-color: $dark;
         position: relative;
+        padding: 2em 0;
+        perspective: 800px;
 
         
         .container {
@@ -33,7 +35,7 @@ body {
             position: relative;
 
             transform-style: preserve-3d;
-            transition: transform .8s cubic-bezier(0.77, 0.04, 0.15, 1.47);
+            transition: transform .7s cubic-bezier(0.62,-0.39, 0.57, 1.46);
 
             button {
                 cursor: pointer;

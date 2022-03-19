@@ -19,6 +19,9 @@ body main {
   place-items: center;
   background-color: #121417;
   position: relative;
+  padding: 2em 0;
+  -webkit-perspective: 800px;
+          perspective: 800px;
 }
 
 body main .container {
@@ -27,10 +30,10 @@ body main .container {
   position: relative;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.77, 0.04, 0.15, 1.47);
-  transition: -webkit-transform 0.8s cubic-bezier(0.77, 0.04, 0.15, 1.47);
-  transition: transform 0.8s cubic-bezier(0.77, 0.04, 0.15, 1.47);
-  transition: transform 0.8s cubic-bezier(0.77, 0.04, 0.15, 1.47), -webkit-transform 0.8s cubic-bezier(0.77, 0.04, 0.15, 1.47);
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.62, -0.39, 0.57, 1.46);
+  transition: -webkit-transform 0.7s cubic-bezier(0.62, -0.39, 0.57, 1.46);
+  transition: transform 0.7s cubic-bezier(0.62, -0.39, 0.57, 1.46);
+  transition: transform 0.7s cubic-bezier(0.62, -0.39, 0.57, 1.46), -webkit-transform 0.7s cubic-bezier(0.62, -0.39, 0.57, 1.46);
 }
 
 body main .container button {
